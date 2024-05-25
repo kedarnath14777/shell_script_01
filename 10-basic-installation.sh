@@ -14,4 +14,4 @@ fi
 dnf install mysql -y 
 
 
-echo "
+echo "installed succesffuly $? " 
