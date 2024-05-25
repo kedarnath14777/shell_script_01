@@ -3,7 +3,7 @@
 
 number=$1
 
-if($number -le 10)
+if($number > 10)
   then 
      echo "$number number is less than 10 "
   else 
