@@ -12,6 +12,14 @@ fi
 
 
 dnf install mysql -y 
+#by ussing the exit status we check last command is successful or not 
+# if it  is 0 (successfull) it os 1 -127 (unsuccessfull)
 
+echo "$?"
 
-echo "installed succesffuly $? " 
+if [ $? -ne 0 ]
+than 
+   echo " install mysql failure " 
+fi 
+
+echo " script still running"
