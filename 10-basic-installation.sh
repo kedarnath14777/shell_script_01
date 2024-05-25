@@ -18,8 +18,8 @@ dnf install mysql -y
 echo "$?"
 
 if [ $? -ne 0 ]
-than 
-   echo " install mysql failure " 
+  than 
+    echo " install mysql failure" 
 fi 
 
 echo " script still running"
