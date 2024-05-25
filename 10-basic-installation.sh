@@ -25,4 +25,13 @@ else
  echo "not successfully  " 
 fi 
 
+dnf instakk git -y 
+if [ $? -eq 0 ]
+then 
+ echo "installation successful git  "
+ exit 1 # if the user is not super user exiting the script 
+else
+ echo "not successfully  git  " 
+fi 
+
 echo " script still running"
