@@ -19,7 +19,9 @@ echo "$?"
 
 if [ $? -ne 0 ]
   than 
-    echo " install mysql failure" 
+    echo " install mysql failure"
+  else 
+  
 fi 
 
 echo " script still running"
