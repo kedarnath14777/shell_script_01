@@ -3,7 +3,7 @@
 #variables : we use the reuseble valus in the script 
 #declertive variables 
 
-person1=kiran
+person1=kiran  # no any space between the variable and value 
 person2=charan 
 
 echo "$person1 :: Hi $person2 , How are you"
