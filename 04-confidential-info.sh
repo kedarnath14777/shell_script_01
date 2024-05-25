@@ -11,3 +11,15 @@ echo "pleae enter the password :: "
 read password 
 
 echo " username :: $username & password :: $password"
+
+# if need to invisible the text in terminal use -s for the read command.
+
+echo "please enter the username2 :: "
+
+read -s username2
+
+echo "pleae enter the password2 :: "
+
+read -s password2 
+
+echo " username :: $username2 & password :: $password2"
