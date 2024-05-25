@@ -25,7 +25,8 @@ else
  echo "not successfully  " 
 fi 
 
-dnf instakk git -y 
+dnf install  git -y 
+
 if [ $? -eq 0 ]
 then 
  echo "installation successful git  "
