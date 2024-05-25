@@ -10,4 +10,4 @@ echo "pleae enter the password :: "
 
 read password 
 
-echo " username :: $username & password :: $password
+echo " username :: $username & password :: $password"
