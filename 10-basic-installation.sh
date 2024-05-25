@@ -16,10 +16,10 @@ dnf install mysql -y
 # if it  is 0 (successfull) it os 1 -127 (unsuccessfull)
 
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then 
   echo "removed  successful "
-  exit 1 # if exit status is 0 is successful (1-127) unsucceessfull
+  exit 1
  else
   echo "not successfully  " 
 fi 
@@ -28,7 +28,7 @@ echo "install git "
 
 dnf removed  git -y 
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then 
  echo "installation successful git  "
  exit 1 # if exit status is 0 is successful (1-127) unsucceessfull
