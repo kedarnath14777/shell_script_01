@@ -26,7 +26,7 @@ fi
 
 echo "install git "
 
-dnf removed  git -y 
+dnf insatll   git -y 
 
 if [ $? -ne 0 ]
 then 
