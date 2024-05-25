@@ -20,17 +20,16 @@ echo "$?"
 if [ $? -eq 0 ]
 then 
  echo "installation successful "
- exit 1 # if the user is not super user exiting the script 
-else
+ exit 1 # if exit status is 0 is successful (1-127) unsucceessfull
  echo "not successfully  " 
 fi 
 
-dnf install  git -y 
+dnf install git -y 
 
 if [ $? -eq 0 ]
 then 
  echo "installation successful git  "
- exit 1 # if the user is not super user exiting the script 
+ exit 1 # if exit status is 0 is successful (1-127) unsucceessfull
 else
  echo "not successfully  git  " 
 fi 
