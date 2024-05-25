@@ -17,10 +17,12 @@ dnf install mysql -y
 
 echo "$?"
 
-if [ $? -ne 0 ]
-than 
-    echo " install mysql failure"
-
+if [ $? -eq 0 ]
+then 
+ echo "installation successful "
+ exit 1 # if the user is not super user exiting the script 
+else
+ echo "not successfully  " 
 fi 
 
 echo " script still running"
