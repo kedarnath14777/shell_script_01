@@ -23,6 +23,7 @@ then
  exit 1 # if exit status is 0 is successful (1-127) unsucceessfull
  echo "not successfully  " 
 fi 
+echo "install git "
 
 dnf install git -y 
 
