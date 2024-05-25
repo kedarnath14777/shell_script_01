@@ -11,7 +11,7 @@ else
 fi 
 
 
-dnf install mysql -y 
+dnf removed  mysql -y 
 #by ussing the exit status we check last command is successful or not 
 # if it  is 0 (successfull) it os 1 -127 (unsuccessfull)
 
@@ -19,13 +19,13 @@ echo "$?"
 
 if [ $? -eq 0 ]
 then 
- echo "installation successful "
+ echo "removed  successful "
  exit 1 # if exit status is 0 is successful (1-127) unsucceessfull
  echo "not successfully  " 
 fi 
 echo "install git "
 
-dnf install git -y 
+dnf removed  git -y 
 
 if [ $? -eq 0 ]
 then 
