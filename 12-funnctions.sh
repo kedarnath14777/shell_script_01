@@ -3,23 +3,21 @@
 
 user= $( id -u)
 
-if ( $user -eq 0)
-then echo "u r the sudo user"
-else  echo " need sudo permissions"
-exit 1
-fi 
+if [ $user -nq 0 ]
+then 
+   echo " not the super user"
+   exit 1
+
+fi
 
 VALIDATE_EXIT_STATUS(){
+
+    echo "exit status of yum : $1"
+    echo "exit status of yum : $2"
+
 
 }
 
 dnf install mysql -y 
 
-if[ $? -eq 0 ]
-then 
-echo " installed successfully"
-else 
- echo " not installed"
- exit 1 
-fi 
-
+VALIDATE_EXIT_STATUS $? "installed successfully"
