@@ -13,9 +13,9 @@ fi
 dnf install mysql -y 
 
 if[ $? -eq 0]
-then 
+ then 
    echo "installed successfully"
-else
+ else
    echo " not installed"
    exit 1 
 fi 
@@ -23,9 +23,9 @@ fi
 dnf install tree -y 
 
 if [ $? -eq 0 ]
-then
+ then
     echo "installed successfully"
-else 
+ else 
     echo "not installed"
     exit 1
 fi 
@@ -33,9 +33,9 @@ fi
 dnf install vim -y 
 
 if[ $? -eq 0 ]
-then
+ then
     echo "installed successfully"
-else 
-     echo "not installed"
+ else 
+     echo "not installed "
      exit 1 
 fi 
