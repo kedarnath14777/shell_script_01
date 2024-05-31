@@ -26,12 +26,4 @@ echo " username :: $username2 & password :: $password2"
 
 # if you need to use in only line 
 
-echo "please enter the username2 :: "
-
-read -P username2
-
-echo "pleae enter the password2 :: "
-
-read -p password2 
-
-echo " username :: $username2 & password :: $password2"
+# read -P is used to print both in read and 
