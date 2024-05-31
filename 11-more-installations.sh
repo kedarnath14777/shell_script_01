@@ -24,7 +24,7 @@ fi
 dnf install yum -y 
 
 if [ $? -eq 0 ]
-than 
+then 
    echo " installed successfully" 
 else 
     echo " not installed" 
