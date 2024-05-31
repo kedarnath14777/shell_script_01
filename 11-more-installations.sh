@@ -12,7 +12,7 @@ fi
 
 dnf install mysql -y 
 
-if[ $? -nq 0]
+if [ $? -eq 0]
  then 
    echo "installed successfully"
  else
@@ -20,22 +20,23 @@ if[ $? -nq 0]
    exit 1 
 fi 
 
-dnf install tree -y 
+dnf install yum -y 
 
-if [ $? -nq 0 ]
- then
-    echo "installed successfully"
- else 
-    echo "not installed"
-    exit 1
+if [ $? -eq 0 ]
+than 
+   echo " installed successfully" 
+else 
+    echo " not installed" 
+    exit 1 
 fi 
 
-dnf install vim -y 
+dnf install nano -y 
 
-if[ $? -nq 0 ]
- then
-    echo "installed successfully"
- else 
-     echo "not installed "
-     exit 1 
+if [ $? -eq 0]
+then 
+   echo "installed successfully"
+else 
+   echo "nopt installed"
 fi 
+
+
