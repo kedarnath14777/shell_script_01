@@ -28,7 +28,7 @@ else
    echo "not removed"
 fi 
 
-dnf remove yum -y 
+dnf remove vim -y 
 
 if [ $? -eq 0 ]
 then 
