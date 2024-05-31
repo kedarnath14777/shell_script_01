@@ -12,12 +12,13 @@ fi
 
 dnf install mysql -y 
 
-if [ $? -eq 0]
- then 
-   echo "installed successfully"
- else
-   echo " not installed"
-   exit 1 
+if [ $? -eq 0 ]
+then 
+    echo "installed successfully"
+else 
+   echo "not installes"
+    echo "nopw am here "
+
 fi 
 
 dnf install yum -y 
