@@ -3,7 +3,7 @@
 
 user= $( id -u)
 
-if [ $user -eq 0 ]
+if [ $user -nq 0 ]
 then 
    echo " not the super user"
    exit 1
