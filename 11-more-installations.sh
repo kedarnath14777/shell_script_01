@@ -12,7 +12,7 @@ fi
 
 dnf install mysql -y 
 
-if[ $? -eq 0]
+if[ $? -nq 0]
  then 
    echo "installed successfully"
  else
@@ -22,7 +22,7 @@ fi
 
 dnf install tree -y 
 
-if [ $? -eq 0 ]
+if [ $? -nq 0 ]
  then
     echo "installed successfully"
  else 
@@ -32,7 +32,7 @@ fi
 
 dnf install vim -y 
 
-if[ $? -eq 0 ]
+if[ $? -nq 0 ]
  then
     echo "installed successfully"
  else 
