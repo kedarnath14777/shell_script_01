@@ -33,7 +33,7 @@ fi
 
 dnf install nano -y 
 
-if [ $? -eq 0]
+if [ $? -eq 0 ]
 then 
    echo "installed successfully"
 else 
